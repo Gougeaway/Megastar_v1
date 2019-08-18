@@ -66,8 +66,7 @@ main.content
 	section.desktop__ver
 
 		.desktop__img
-			img(src='../../../static/img/iPad_Mockup.png')
-
+			
 		.desktop__descr
 
 			p.desktop__heading.
@@ -87,17 +86,50 @@ main.content
 
 			p.mobile__text.
 				Разработка проекта началась с исследования интернет-магазинов с подобным устройстотвом каталога. Сложность состояла в том, что каталог очень массивный и имеет много вложенных подразделов. Учитывая все эти особенности он так же должен быть удобен на мобильной адаптивной версии сайта.
-	
-	section.slider__wrapper 1
 
 	
+	.swiper-container.swiper-frame
+		.swiper-wrapper
+									
+			.swiper-slide 
+				img(src="../../../static/img/swiper_slide1.png")
+
+			.swiper-slide
+				img(src="../../../static/img/swiper_slide2.png")
+
+			.swiper-slide
+				img(src="../../../static/img/swiper_slide3.png")
+
+			.swiper-slide
+				img(src="../../../static/img/swiper_slide4.png")
+			.swiper-slide
+				img(src="../../../static/img/swiper_slide5.png")
+
+		
+	//
+		.swiper-pagination
+		.swiper-button-prev
+		.swiper-button-next
+
+			//.swiper-slide
+				img(src="../../../static/img/swiper_img/slide5.png")
+
+			
+								//			
+									.swiper-pagination
+													
+									.swiper-button-prev
+									.swiper-button-next
+												
+									.swiper-scrollbar
+
+
 	section.dev__descr
 
 		p.descr__text.
 				Разработка проекта началась с исследования интернет-магазинов с подобным устройстотвом каталога. Сложность состояла в том, что каталог очень массивный и имеет много вложенных подразделов. Учитывая все эти особенности он так же должен быть удобен на мобильной адаптивной версии сайта.	
 		
 		.dev__img
-			img(src="../../../static/img/Phone_5s.png")
 
 		.slider-controls
 			span.slide-tog
@@ -142,8 +174,7 @@ main.content
 				Разработка проекта началась с исследования интернет-магазинов с подобным устройстотвом каталога. Сложность состояла в том, что каталог очень массивный и имеет много вложенных подразделов. Учитывая все эти особенности он так же должен быть удобен на мобильной адаптивной версии сайта.
 		
 		.catalog__content
-			img(src="../../../static/img/Technocity_catalog_desktop.png")
-		
+					
 
 		p.catalog__text.catalog__text_mod.
 			Разработка проекта началась с исследования интернет-магазинов с подобным устройстотвом каталога. Сложность состояла в том, что каталог очень массивный и имеет много вложенных подразделов. Учитывая все эти особенности он так же должен быть удобен на мобильной адаптивной версии сайта.
@@ -159,8 +190,17 @@ main.content
 	section.projects
 
 		.projects__img
-
 			.projects__overlay
+				.projects__container
+
+					p.projects__to-next.
+						Следующий проект
+
+					p.projects__title.
+						Мужской зал
+
+					p.projects__subtitle.
+						Сайт парикмахерсокй с сервисом онлайн-записи
 				
 
 	section.feedback
@@ -170,8 +210,15 @@ main.content
 
 		.feedback__container
 
-			form(action="#")
+			form(action="#").feedback__form
+				
+				input(type='name' name='your_name' placeholder='Представьтесь').feedback__form-input
 
+				input(type='email' name='your_email' placeholder='Ваш E-mail').feedback__form-input
+
+				textarea(name='your_issue' placeholder='Чем можем помочь?'  rows='4').feedback__form-textarea
+
+				input(type='submit' value='Отправить' name='submit_issue').feedback__form-button
 		
 
 		
